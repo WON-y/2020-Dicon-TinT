@@ -7,8 +7,13 @@
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="25dp"
-    android:backgroundTint="@color/backgroundColorPrimary"
-    android:background="@color/backgroundColorPrimary">
+    android:backgroundTint="@color/backgroundColorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/backgroundColorPrimary">
 
     <SearchView
         android:id="@+id/searchView"
@@ -66,6 +71,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
